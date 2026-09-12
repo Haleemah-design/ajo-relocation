@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Àjò</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="login-page">
+
+    <main class="login-container">
+
+        <!-- LEFT SIDE -->
+        <section class="login-left">
+
+           <a href="index.html" class="logo">
+               <img src="../images/logo2.png" alt="" srcset="">
+            </a>
+
+            <div class="login-message">
+                <span class="login-badge">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    YOUR JAPA JOURNEY
+                </span>
+
+                <h1>
+                    Your journey starts
+                    <span>here.</span>
+                </h1>
+
+                <p>
+                    Log in to continue planning, preparing and tracking
+                    your journey from Nigeria to your dream destination.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+        <section class="login-right">
+
+            <div class="login-card">
+
+                <div class="login-heading">
+                    <h2>Welcome back</h2>
+
+                    <p>
+                        Log in to your Àjò account to continue.
+                    </p>
+                </div>
+
+
+                <form id="loginForm">
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email address
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="you@example.com"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-group">
+
+                        <div class="password-label">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <a href="#">
+                                Forgot password?
+                            </a>
+
+                        </div>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter your password"
+                                required>
+
+                            <button
+                                type="button"
+                                class="toggle-password"
+                                id="togglePassword"
+                                aria-label="Show password">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- REMEMBER -->
+
+                    <label class="remember-me">
+
+                        <input type="checkbox">
+
+                        <span>Remember me</span>
+
+                    </label>
+
+
+                    <!-- LOGIN -->
+
+                    <button
+                        type="submit"
+                        class="login-button">
+
+                        Log in
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+
+                <div class="login-divider">
+                    <span>or</span>
+                </div>
+
+
+                <!-- GOOGLE -->
+
+                <button class="google-button" type="button">
+
+                    <i class="fa-brands fa-google"></i>
+
+                    Continue with Google
+
+                </button>
+
+
+                <p class="signup-text">
+
+                    Don't have an account?
+
+                    <a href="signup.html">
+                        Create one
+                    </a>
+
+                </p>
+
+            </div>
+
+        </section>
+        
+ <!-- FOOTER -->
+
+        <footer class="dashboard-footer">
+
+            <span>© 2026 Àjò</span>
+
+            <span>Plan. Prepare. Japa.</span>
+
+        </footer>
+    </main>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

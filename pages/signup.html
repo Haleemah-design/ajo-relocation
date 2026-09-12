@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | Àjò</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="login-page">
+
+    <main class="login-container">
+
+        <!-- LEFT SIDE -->
+
+        <section class="login-left">
+
+            <div class="login-brand">
+                <div> <a href="index.html" class="logo">
+               <img src="../images/logo2.png" alt="" srcset="">
+            </a></div>
+            </div>
+
+            <div class="login-message">
+
+                <span class="login-badge">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    PLAN. PREPARE. JAPA.
+                </span>
+
+                <h1>
+                    Let's plan your
+                    <span>Japa journey.</span>
+                </h1>
+
+                <p>
+                    Create your Àjò account and get a personalized
+                    roadmap to help you plan, prepare and relocate
+                    with confidence.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+
+        <section class="login-right">
+
+            <div class="login-card">
+
+                <div class="login-heading">
+
+                    <h2>Create your account</h2>
+
+                    <p>
+                        Start planning your Japa journey with Àjò.
+                    </p>
+
+                </div>
+
+
+                <form id="signupForm">
+
+
+                    <!-- FULL NAME -->
+
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full name
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-regular fa-user"></i>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                placeholder="Enter your full name"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="signupEmail">
+                            Email address
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="signupEmail"
+                                placeholder="you@example.com"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="signupPassword">
+                            Password
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="signupPassword"
+                                placeholder="Create a password"
+                                minlength="8"
+                                required>
+
+                            <button
+                                type="button"
+                                class="toggle-password"
+                                id="toggleSignupPassword">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm password
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                placeholder="Confirm your password"
+                                minlength="8"
+                                required>
+
+                            <button
+                                type="button"
+                                class="toggle-password"
+                                id="toggleConfirmPassword">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TERMS -->
+
+                    <label class="remember-me signup-terms">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required>
+
+                        <span>
+                            I agree to Àjò's
+                            <a href="#">Terms & Conditions</a>
+                            and
+                            <a href="#">Privacy Policy</a>.
+                        </span>
+
+                    </label>
+
+
+                    <!-- CREATE ACCOUNT -->
+
+                    <button
+                        type="submit"
+                        class="login-button">
+
+                        Create Account
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+
+                <!-- DIVIDER -->
+
+                <div class="login-divider">
+                    <span>or</span>
+                </div>
+
+
+                <!-- GOOGLE -->
+
+                <button
+                    class="google-button"
+                    type="button">
+
+                    <i class="fa-brands fa-google"></i>
+
+                    Continue with Google
+
+                </button>
+
+
+                <!-- LOGIN -->
+
+                <p class="signup-text">
+
+                    Already have an account?
+
+                    <a href="login.html">
+                        Log in
+                    </a>
+
+                </p>
+
+            </div>
+
+        </section>
+
+          <!-- FOOTER -->
+
+        <footer class="dashboard-footer">
+
+            <span>© 2026 Àjò</span>
+
+            <span>Plan. Prepare. Japa.</span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

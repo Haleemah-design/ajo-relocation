@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Àjò — Choose Your Timeline</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="timeline-page">
+
+    <!-- HEADER -->
+    <header class="onboarding-header">
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+               <img src="../images/logo.png" alt="" srcset="">
+            </a>
+
+        <!-- Progress -->
+        <div class="step-indicator">
+
+            <span class="step-dot"></span>
+            <span class="step-dot"></span>
+            <span class="step-dot"></span>
+
+            <span class="step-dot active"></span>
+
+            <span class="step-number">4 of 4</span>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="timeline-container">
+
+        <!-- LEFT SIDE -->
+        <section class="timeline-left">
+
+            <a href="purpose.html" class="back-link">
+                <span>←</span>
+                Back
+            </a>
+
+            <h1>
+                When do you want to<br>
+                leave Nigeria?
+            </h1>
+
+            <p class="timeline-description">
+                This helps us draft a realistic timeline countdown and schedule
+                tasks for you to meet your departure window.
+            </p>
+
+
+            <!-- IMAGE -->
+            <div class="timeline-image">
+                <img 
+                    src="../images/timeline-image.png" 
+                    alt="Calendar representing your relocation timeline"
+                >
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+        <section class="timeline-right">
+
+            <!-- OPTION 1 -->
+            <button 
+                type="button"
+                class="timeline-option"
+                data-timeline="Within 3 months"
+            >
+
+                <div class="timeline-option-left">
+
+                    <span class="calendar-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+                            <path d="M16 3V7"></path>
+                            <path d="M8 3V7"></path>
+                            <path d="M3 10H21"></path>
+                        </svg>
+                    </span>
+
+                    <span class="timeline-text">
+                        Within 3 months
+                    </span>
+
+                </div>
+
+                <span class="timeline-radio"></span>
+
+            </button>
+
+
+            <!-- OPTION 2 -->
+            <button 
+                type="button"
+                class="timeline-option"
+                data-timeline="3 - 6 months"
+            >
+
+                <div class="timeline-option-left">
+
+                    <span class="calendar-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+                            <path d="M16 3V7"></path>
+                            <path d="M8 3V7"></path>
+                            <path d="M3 10H21"></path>
+                        </svg>
+                    </span>
+
+                    <span class="timeline-text">
+                        3 - 6 months
+                    </span>
+
+                </div>
+
+                <span class="timeline-radio"></span>
+
+            </button>
+
+
+            <!-- OPTION 3 - DEFAULT SELECTED -->
+            <button 
+                type="button"
+                class="timeline-option selected"
+                data-timeline="6 - 12 months"
+            >
+
+                <div class="timeline-option-left">
+
+                    <span class="calendar-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+                            <path d="M16 3V7"></path>
+                            <path d="M8 3V7"></path>
+                            <path d="M3 10H21"></path>
+                        </svg>
+                    </span>
+
+                    <span class="timeline-text">
+                        6 - 12 months
+                    </span>
+
+                </div>
+
+                <span class="timeline-radio">
+                    <span class="radio-check">✓</span>
+                </span>
+
+            </button>
+
+
+            <!-- OPTION 4 -->
+            <button 
+                type="button"
+                class="timeline-option"
+                data-timeline="12+ months"
+            >
+
+                <div class="timeline-option-left">
+
+                    <span class="calendar-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+                            <path d="M16 3V7"></path>
+                            <path d="M8 3V7"></path>
+                            <path d="M3 10H21"></path>
+                        </svg>
+                    </span>
+
+                    <span class="timeline-text">
+                        12+ months
+                    </span>
+
+                </div>
+
+                <span class="timeline-radio"></span>
+
+            </button>
+
+
+            <!-- CONTINUE -->
+            <button 
+                type="button"
+                class="create-plan-button"
+                id="createPlanButton"
+            >
+                Create My Japa Plan
+                <span>→</span>
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

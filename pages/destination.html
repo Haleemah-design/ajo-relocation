@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Àjò — Choose Your Destination</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="onboarding-page">
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="onboarding-header">
+
+            <a href="index.html" class="logo">
+               <img src="../images/logo.png" alt="" srcset="">
+            </a>
+
+            <div class="step-indicator">
+
+                <div class="step-dots">
+                    <span></span>
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <span class="step-number">2 of 4</span>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= DESTINATION CONTENT ================= -->
+
+        <section class="destination-section">
+
+            <a href="onboarding.html" class="back-link">
+                ← <span>Back</span>
+            </a>
+
+
+            <div class="destination-heading">
+
+                <h1>
+                    Where are you planning to Japa?
+                </h1>
+
+                <p>
+                    Choose your destination country to help us tailor
+                    your visa and documents checklist.
+                </p>
+
+            </div>
+
+
+            <!-- Destination cards -->
+
+            <div class="destination-grid">
+
+                <!-- UK -->
+
+                <button class="destination-card selected" data-country="United Kingdom">
+
+                    <div class="country-top">
+<span class="country-flag"><span class="fi fi-gb"></span>
+</span>                        <span class="selected-check">✓</span>
+                    </div>
+
+                    <h2>United Kingdom</h2>
+
+                </button>
+
+
+                <!-- Canada -->
+
+                <button class="destination-card" data-country="Canada">
+
+                    <div class="country-top">
+     <span class="country-flag"><span class="fi fi-ca"></span>
+</span>
+                        <span class="selected-check">✓</span>
+                    </div>
+
+                    <h2>Canada</h2>
+
+                </button>
+
+
+                <!-- Australia -->
+
+                <button class="destination-card" data-country="Australia">
+
+                    <div class="country-top">
+                       <span class="country-flag"><span class="fi fi-au"></span>
+</span>
+                        <span class="selected-check">✓</span>
+                    </div>
+
+                    <h2>Australia</h2>
+
+                </button>
+
+
+                <!-- Germany -->
+
+                <button class="destination-card" data-country="Germany">
+
+                    <div class="country-top">
+                       <span class="country-flag"><span class="fi fi-de"></span>
+</span>
+                        <span class="selected-check">✓</span>
+                    </div>
+
+                    <h2>Germany</h2>
+
+                </button>
+
+
+                <!-- USA -->
+
+                <button class="destination-card" data-country="United States">
+
+                    <div class="country-top">
+<span class="country-flag"><span class="fi fi-us"></span>
+</span>                        <span class="selected-check">✓</span>
+                    </div>
+
+                    <h2>United States</h2>
+
+                </button>
+
+
+                <!-- Other -->
+
+                <button class="destination-card" data-country="Other Destination">
+
+                    <div class="country-top">
+
+                        <span class="other-destination-icon">
+                           🌍
+                        </span>
+
+                    </div>
+
+                    <h2>Other Destination</h2>
+
+                </button>
+
+            </div>
+
+
+            <!-- Continue -->
+
+            <div class="destination-actions">
+
+                <button class="continue-button" id="destinationContinue">
+                    Continue →
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

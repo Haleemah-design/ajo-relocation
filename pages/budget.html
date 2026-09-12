@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Àjò — Budget Planner</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body class="dashboard-page budget-page">
+
+
+    <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+    <aside class="dashboard-sidebar">
+
+        <!-- LOGO -->
+
+        <a href="dashboard.html" class="logo">
+            <img src="../images/logo2.png" alt="Àjò">
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="dashboard-nav">
+
+            <a href="dashboard.html" class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-solid fa-table-cells-large"></i>
+                </span>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="roadmap.html" class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-solid fa-signs-post"></i>
+                </span>
+
+                <span>My Roadmap</span>
+
+            </a>
+
+
+            <a href="documents.html" class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-regular fa-folder-open"></i>
+                </span>
+
+                <span>Documents</span>
+
+            </a>
+
+
+            <a href="budget.html"
+               class="dashboard-nav-link active">
+
+                <span class="nav-icon">
+                    <i class="fa-solid fa-wallet"></i>
+                </span>
+
+                <span>Budget Planner</span>
+
+            </a>
+
+
+            <a href="ielts.html" class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+
+                <span>IELTS / TOEFL</span>
+
+            </a>
+
+
+            <a href="accommodation.html" class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+
+                <span>Accommodation</span>
+
+            </a>
+
+
+            <a href="#" class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </span>
+
+                <span>Resources</span>
+
+            </a>
+
+
+            <a href="#" class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-regular fa-message"></i>
+                </span>
+
+                <span>Messages</span>
+
+            </a>
+
+
+            <a href="profile.html" class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-regular fa-user"></i>
+                </span>
+
+                <span>Profile</span>
+
+            </a>
+
+
+            <a href="#" class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-solid fa-gear"></i>
+                </span>
+
+                <span>Settings</span>
+
+            </a>
+
+        </nav>
+
+
+        <!-- HELP -->
+
+        <div class="dashboard-help">
+
+            <div class="help-title">
+
+                <span>?</span>
+
+                Need help?
+
+            </div>
+
+            <p>
+                Chat with our relocation assistants instantly.
+            </p>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================
+         MAIN CONTENT
+    ====================================== -->
+
+    <main class="dashboard-main budget-main">
+
+
+        <!-- =====================================
+             HEADER
+        ====================================== -->
+
+        <header class="budget-header">
+
+            <div>
+
+                <h1>
+                    Budget Planner
+                </h1>
+
+                <p>
+                    Track your expenses and stay on top of your Japa funding.
+                </p>
+
+            </div>
+
+
+            <div class="budget-destination">
+
+<i class="fa-regular fa-flag"></i>
+                <strong id="budgetDestination">
+                    United Kingdom
+                </strong>
+
+                <span class="budget-divider">
+                    ·
+                </span>
+
+                <span id="budgetPurpose">
+                    Study
+                </span>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =====================================
+             BUDGET CONTENT
+        ====================================== -->
+
+        <div class="budget-layout">
+
+
+            <!-- =====================================
+                 LEFT SIDE
+            ====================================== -->
+
+            <section class="budget-left">
+
+
+                <!-- SUMMARY CARDS -->
+
+                <section class="budget-summary">
+
+
+                    <!-- TOTAL -->
+
+                    <div class="budget-summary-card">
+
+                        <span>
+                            Total Budget Required
+                        </span>
+
+                        <strong>
+                            ₦6,890,000
+                        </strong>
+
+                        <small>
+                            Estimated study Japa budget
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- SAVED -->
+
+                    <div class="budget-summary-card saved">
+
+                        <span>
+                            Saved / Secured
+                        </span>
+
+                        <strong>
+                            ₦3,200,000
+                        </strong>
+
+                        <small>
+                            47% of total target saved
+                        </small>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =====================================
+                     BUDGET BREAKDOWN
+                ====================================== -->
+
+                <section class="budget-breakdown">
+
+                    <h2>
+                        Budget Breakdown
+                    </h2>
+
+
+                    <!-- VISA -->
+
+                    <div class="budget-item">
+
+                        <div class="budget-item-header">
+
+                            <strong>
+                                Visa &amp; Application
+                            </strong>
+
+                            <span>
+                                Saved: ₦450,000 / ₦450,000
+
+                                <b>100%</b>
+                            </span>
+
+                        </div>
+
+                        <div class="budget-progress">
+
+                            <span style="width: 100%;"></span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- FLIGHT -->
+
+                    <div class="budget-item">
+
+                        <div class="budget-item-header">
+
+                            <strong>
+                                Flight Ticket
+                            </strong>
+
+                            <span>
+                                Saved: ₦700,000 / ₦1,800,000
+
+                                <b>38%</b>
+                            </span>
+
+                        </div>
+
+                        <div class="budget-progress">
+
+                            <span style="width: 38%;"></span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ACCOMMODATION -->
+
+                    <div class="budget-item">
+
+                        <div class="budget-item-header">
+
+                            <strong>
+                                Accommodation
+                            </strong>
+
+                            <span>
+                                Saved: ₦1,000,000 / ₦2,800,000
+
+                                <b>35%</b>
+                            </span>
+
+                        </div>
+
+                        <div class="budget-progress orange">
+
+                            <span style="width: 35%;"></span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- SCHOOL -->
+
+                    <div class="budget-item">
+
+                        <div class="budget-item-header">
+
+                            <strong>
+                                School Fees (Deposit)
+                            </strong>
+
+                            <span>
+                                Saved: ₦800,000 / ₦2,000,000
+
+                                <b>40%</b>
+                            </span>
+
+                        </div>
+
+                        <div class="budget-progress">
+
+                            <span style="width: 40%;"></span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- LIVING -->
+
+                    <div class="budget-item">
+
+                        <div class="budget-item-header">
+
+                            <strong>
+                                Living Expenses
+                            </strong>
+
+                            <span>
+                                Saved: ₦400,000 / ₦1,000,000
+
+                                <b>40%</b>
+                            </span>
+
+                        </div>
+
+                        <div class="budget-progress">
+
+                            <span style="width: 40%;"></span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- INSURANCE -->
+
+                    <div class="budget-item">
+
+                        <div class="budget-item-header">
+
+                            <strong>
+                                Insurance (IHS)
+                            </strong>
+
+                            <span>
+                                Saved: ₦150,000 / ₦800,000
+
+                                <b>18%</b>
+                            </span>
+
+                        </div>
+
+                        <div class="budget-progress orange">
+
+                            <span style="width: 18%;"></span>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+
+
+            <!-- =====================================
+                 RIGHT SIDE
+            ====================================== -->
+
+            <aside class="budget-right">
+
+
+                <!-- =====================================
+                     OVERALL PROGRESS
+                ====================================== -->
+
+                <section class="budget-overall-card">
+
+                    <h2>
+                        Overall Progress
+                    </h2>
+
+
+                    <div class="budget-circle">
+
+                        <div class="budget-circle-inner">
+
+                            <strong>
+                                47%
+                            </strong>
+
+                            <span>
+                                Saved
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        Keep stacking! You need ₦3,690,000 more to
+                        fully fund your visa presentation.
+                    </p>
+
+                </section>
+
+
+
+                <!-- =====================================
+                     PROOF OF FUNDS
+                ====================================== -->
+
+                <section class="budget-funds-card">
+
+                    <h2>
+                        Need proof of funds?
+                    </h2>
+
+                    <p>
+                        Get connected with verified diaspora lending
+                        partners or learn how to lock your funds safely.
+                    </p>
+
+
+                    <button id="fundingHelpButton">
+                        Find Out How
+                    </button>
+
+                </section>
+
+            </aside>
+
+        </div>
+
+         <!-- DASHBOARD FOOTER -->
+<footer class="pages-footer">
+    <span>© 2026 Àjò</span>
+    <span>Plan. Prepare. Japa.</span>
+</footer>
+
+    </main>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

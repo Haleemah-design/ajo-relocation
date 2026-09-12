@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Documents | Àjò</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="documents-page">
+
+<div class="documents-layout">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="documents-sidebar">
+
+         <a href="index.html" class="logo">
+               <img src="../images/logo2.png" alt="" srcset="">
+            </a>
+
+
+        <nav class="documents-nav">
+
+            <a href="dashboard.html">
+                <i class="fa-solid fa-table-cells-large"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="roadmap.html">
+                <i class="fa-solid fa-signs-post"></i>
+                <span>My Roadmap</span>
+            </a>
+
+            <a href="documents.html" class="active">
+                <i class="fa-regular fa-folder-open"></i>
+                <span>Documents</span>
+            </a>
+
+            <a href="budget.html">
+                <i class="fa-regular fa-credit-card"></i>
+                <span>Budget Planner</span>
+            </a>
+
+            <a href="ielts.html">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>IELTS / TOEFL</span>
+            </a>
+
+            <a href="accommodation.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Accommodation</span>
+            </a>
+
+            <a href="#">
+<i class="fa-solid fa-book-open"></i>
+                <span>Resources</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-message"></i>
+                <span>Messages</span>
+            </a>
+
+            <a href="profile.html">
+                <i class="fa-regular fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+
+        <!-- HELP -->
+
+        <div class="documents-help">
+
+            <div class="help-icon">
+                <i class="fa-regular fa-circle-question"></i>
+            </div>
+
+            <div>
+                <strong>Need help?</strong>
+
+                <p>
+                    Chat with our relocation assistants instantly.
+                </p>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="documents-main">
+
+
+        <!-- HEADER -->
+
+        <header class="documents-header">
+
+            <div>
+
+                <h1>Documents</h1>
+
+                <p>
+                    Upload, track and manage all your important documents.
+                </p>
+
+            </div>
+
+
+            <div class="documents-destination">
+
+                <span><i class="fa-regular fa-flag"></i></span>
+
+                <strong id="documentsDestination">
+                    United Kingdom
+                </strong>
+
+                <span>· Study</span>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= SUMMARY CARDS ================= -->
+
+        <section class="document-summary">
+
+
+            <div class="summary-card">
+
+                <span>Total documents</span>
+
+                <strong id="totalDocuments">
+                    12
+                </strong>
+
+            </div>
+
+
+            <div class="summary-card uploaded-card">
+
+                <span>Uploaded</span>
+
+                <strong id="uploadedDocuments">
+                    2
+                </strong>
+
+            </div>
+
+
+            <div class="summary-card review-card">
+
+                <span>In review</span>
+
+                <strong id="reviewDocuments">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-card pending-card">
+
+                <span>Pending</span>
+
+                <strong id="pendingDocuments">
+                    10
+                </strong>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= FILTERS ================= -->
+
+        <section class="document-controls">
+
+            <div class="document-tabs">
+
+                <button
+                    class="document-tab active"
+                    data-filter="all">
+                    All Documents
+                </button>
+
+                <button
+                    class="document-tab"
+                    data-filter="uploaded">
+                    Uploaded
+                </button>
+
+                <button
+                    class="document-tab"
+                    data-filter="review">
+                    In Review
+                </button>
+
+                <button
+                    class="document-tab"
+                    data-filter="pending">
+                    Pending
+                </button>
+
+            </div>
+
+
+            <button
+                class="add-document-btn"
+                id="addDocumentBtn">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Add Document
+
+            </button>
+
+        </section>
+
+
+
+        <!-- ================= DOCUMENT TABLE ================= -->
+
+        <section class="documents-table-wrapper">
+
+            <div class="documents-table-header">
+
+                <div>Document</div>
+                <div>Status</div>
+                <div>Uploaded</div>
+                <div>Action</div>
+
+            </div>
+
+
+
+            <!-- PASSPORT -->
+
+            <div
+                class="document-row"
+                data-status="uploaded">
+
+                <div class="document-name">
+
+                    <i class="fa-regular fa-file"></i>
+
+                    <span>International Passport</span>
+
+                </div>
+
+                <div>
+                    <span class="document-status uploaded">
+                        Uploaded
+                    </span>
+                </div>
+
+                <div class="uploaded-date">
+                    May 10, 2024
+                </div>
+
+                <div>
+                    <button class="document-action view-action">
+                        View
+                    </button>
+                </div>
+
+            </div>
+
+
+
+            <!-- NIN -->
+
+            <div
+                class="document-row"
+                data-status="uploaded">
+
+                <div class="document-name">
+
+                    <i class="fa-regular fa-file"></i>
+
+                    <span>National ID (NIN)</span>
+
+                </div>
+
+                <div>
+                    <span class="document-status uploaded">
+                        Uploaded
+                    </span>
+                </div>
+
+                <div class="uploaded-date">
+                    May 10, 2024
+                </div>
+
+                <div>
+                    <button class="document-action view-action">
+                        View
+                    </button>
+                </div>
+
+            </div>
+
+
+
+            <!-- BIRTH CERTIFICATE -->
+
+            <div
+                class="document-row"
+                data-status="pending">
+
+                <div class="document-name">
+
+                    <i class="fa-regular fa-file"></i>
+
+                    <span>Birth Certificate</span>
+
+                </div>
+
+                <div>
+                    <span class="document-status pending">
+                        Pending
+                    </span>
+                </div>
+
+                <div class="uploaded-date">
+                    —
+                </div>
+
+                <div>
+                    <button
+                        class="document-action upload-action">
+                        Upload Now
+                    </button>
+                </div>
+
+            </div>
+
+
+
+            <!-- WAEC -->
+
+            <div
+                class="document-row"
+                data-status="pending">
+
+                <div class="document-name">
+
+                    <i class="fa-regular fa-file"></i>
+
+                    <span>WAEC/SSCE Certificate</span>
+
+                </div>
+
+                <div>
+                    <span class="document-status pending">
+                        Pending
+                    </span>
+                </div>
+
+                <div class="uploaded-date">
+                    —
+                </div>
+
+                <div>
+                    <button
+                        class="document-action upload-action">
+                        Upload Now
+                    </button>
+                </div>
+
+            </div>
+
+
+
+            <!-- DEGREE -->
+
+            <div
+                class="document-row"
+                data-status="pending">
+
+                <div class="document-name">
+
+                    <i class="fa-regular fa-file"></i>
+
+                    <span>Bachelor Degree Certificate</span>
+
+                </div>
+
+                <div>
+                    <span class="document-status pending">
+                        Pending
+                    </span>
+                </div>
+
+                <div class="uploaded-date">
+                    —
+                </div>
+
+                <div>
+                    <button
+                        class="document-action upload-action">
+                        Upload Now
+                    </button>
+                </div>
+
+            </div>
+
+
+
+            <!-- TRANSCRIPT -->
+
+            <div
+                class="document-row"
+                data-status="pending">
+
+                <div class="document-name">
+
+                    <i class="fa-regular fa-file"></i>
+
+                    <span>Academic Transcript</span>
+
+                </div>
+
+                <div>
+                    <span class="document-status pending">
+                        Pending
+                    </span>
+                </div>
+
+                <div class="uploaded-date">
+                    —
+                </div>
+
+                <div>
+                    <button
+                        class="document-action upload-action">
+                        Upload Now
+                    </button>
+                </div>
+
+            </div>
+
+
+
+            <!-- PASSPORT PHOTO -->
+
+            <div
+                class="document-row"
+                data-status="pending">
+
+                <div class="document-name">
+
+                    <i class="fa-regular fa-file"></i>
+
+                    <span>Passport Photograph</span>
+
+                </div>
+
+                <div>
+                    <span class="document-status pending">
+                        Pending
+                    </span>
+                </div>
+
+                <div class="uploaded-date">
+                    —
+                </div>
+
+                <div>
+                    <button
+                        class="document-action upload-action">
+                        Upload Now
+                    </button>
+                </div>
+
+            </div>
+
+
+
+            <!-- BANK -->
+
+            <div
+                class="document-row"
+                data-status="pending">
+
+                <div class="document-name">
+
+                    <i class="fa-regular fa-file"></i>
+
+                    <span>Bank Statement</span>
+
+                </div>
+
+                <div>
+                    <span class="document-status pending">
+                        Pending
+                    </span>
+                </div>
+
+                <div class="uploaded-date">
+                    —
+                </div>
+
+                <div>
+                    <button
+                        class="document-action upload-action">
+                        Upload Now
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- HIDDEN FILE INPUT -->
+
+        <input
+            type="file"
+            id="documentFileInput"
+            hidden
+            accept=".pdf,.jpg,.jpeg,.png">
+
+
+             <!-- DASHBOARD FOOTER -->
+<footer class="pages-footer">
+    <span>© 2026 Àjò</span>
+    <span>Plan. Prepare. Japa.</span>
+</footer>
+    </main>
+
+</div>
+
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

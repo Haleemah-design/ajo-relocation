@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Àjò — Profile & Settings</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+
+<body class="dashboard-page profile-page">
+
+
+    <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+    <aside class="dashboard-sidebar">
+
+        <!-- LOGO -->
+
+        <a href="../index.html" class="logo dashboard-logo">
+            <img src="../images/logo2.png" alt="Àjò">
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="dashboard-nav">
+
+            <a href="dashboard.html" class="dashboard-nav-link">
+                <span class="nav-icon">
+                    <i class="fa-solid fa-table-cells-large"></i>
+                </span>
+
+                <span>Dashboard</span>
+            </a>
+
+
+            <a href="roadmap.html" class="dashboard-nav-link">
+                <span class="nav-icon">
+                    <i class="fa-solid fa-signs-post"></i>
+                </span>
+
+                <span>My Roadmap</span>
+            </a>
+
+
+            <a href="documents.html" class="dashboard-nav-link">
+                <span class="nav-icon">
+                    <i class="fa-regular fa-folder-open"></i>
+                </span>
+
+                <span>Documents</span>
+            </a>
+
+
+            <a href="budget.html" class="dashboard-nav-link">
+                <span class="nav-icon">
+                    <i class="fa-solid fa-wallet"></i>
+                </span>
+
+                <span>Budget Planner</span>
+            </a>
+
+
+            <a href="ielts.html" class="dashboard-nav-link">
+                <span class="nav-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+
+                <span>IELTS / TOEFL</span>
+            </a>
+
+
+            <a href="accommodation.html" class="dashboard-nav-link">
+                <span class="nav-icon">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+
+                <span>Accommodation</span>
+            </a>
+
+
+            <a href="#" class="dashboard-nav-link">
+                <span class="nav-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </span>
+
+                <span>Resources</span>
+            </a>
+
+
+            <a href="#" class="dashboard-nav-link">
+                <span class="nav-icon">
+                    <i class="fa-regular fa-message"></i>
+                </span>
+
+                <span>Messages</span>
+            </a>
+
+
+            <!-- ACTIVE PROFILE -->
+
+            <a href="profile.html" class="dashboard-nav-link active">
+
+                <span class="nav-icon">
+                    <i class="fa-regular fa-user"></i>
+                </span>
+
+                <span>Profile</span>
+
+            </a>
+
+
+            <a href="#" class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-solid fa-gear"></i>
+                </span>
+
+                <span>Settings</span>
+
+            </a>
+
+        </nav>
+
+
+        <!-- HELP -->
+
+        <div class="dashboard-help">
+
+            <div class="help-title">
+
+                <span>?</span>
+
+                Need help?
+
+            </div>
+
+
+            <p>
+                Chat with our relocation assistants instantly.
+            </p>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================
+         MAIN CONTENT
+    ====================================== -->
+
+    <main class="profile-main">
+
+
+        <!-- =================================
+             PAGE HEADER
+        ================================== -->
+
+        <header class="profile-header">
+
+            <div>
+
+                <h1>Profile &amp; Settings</h1>
+
+                <p>
+                    Manage your account preferences, notifications and billing details.
+                </p>
+
+            </div>
+
+
+            <!-- DESTINATION PILL -->
+
+            <div class="profile-destination-pill">
+
+                <span><i class="fa-regular fa-flag"></i></span>
+
+                <strong id="profileDestination">
+                    United Kingdom
+                </strong>
+
+                <span>· Study</span>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================
+             PROFILE GRID
+        ================================== -->
+
+        <div class="profile-grid">
+
+
+            <!-- =================================
+                 LEFT COLUMN
+            ================================== -->
+
+            <div class="profile-left">
+
+
+                <!-- PROFILE SUMMARY -->
+
+                <section class="profile-card profile-summary">
+
+                    <div class="profile-user">
+
+                        <img
+                            src="../images/profile.png"
+                            alt="Tunde Balogun"
+                            id="profileImage"
+                        >
+
+                        <div class="profile-user-info">
+
+                            <h2>Tunde Balogun</h2>
+
+                            <p>
+                                Lagos, Nigeria · Intended Relocation:
+                                September 2027
+                            </p>
+
+                            <span class="verified-profile">
+                                <i class="fa-solid fa-check"></i>
+                                Verified Diaspora Passport Status
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="change-photo-btn"
+                        id="changePhotoBtn"
+                    >
+                        Change Photo
+                    </button>
+
+                    <input
+                        type="file"
+                        id="profilePhotoInput"
+                        accept="image/*"
+                        hidden
+                    >
+
+                </section>
+
+
+
+                <!-- PERSONAL DETAILS -->
+
+                <section class="profile-card personal-details-card">
+
+                    <h2>Personal Details</h2>
+
+
+                    <form id="profileForm">
+
+
+                        <!-- FULL NAME -->
+
+                        <div class="profile-field">
+
+                            <label for="fullName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                value="Tunde Balogun"
+                            >
+
+                        </div>
+
+
+
+                        <!-- EMAIL -->
+
+                        <div class="profile-field">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                value="tunde.balogun@gmail.com"
+                            >
+
+                        </div>
+
+
+
+                        <!-- PHONE -->
+
+                        <div class="profile-field">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                value="+234 803 123 4567"
+                            >
+
+                        </div>
+
+
+
+                        <!-- DESTINATION -->
+
+                        <div class="profile-field">
+
+                            <label for="profileDestinationInput">
+                                Intended Destination
+                            </label>
+
+                            <input
+                                type="text"
+                                id="profileDestinationInput"
+                                value="United Kingdom (Study Route)"
+                            >
+
+                        </div>
+
+
+
+                        <!-- SAVE -->
+
+                        <button
+                            type="submit"
+                            class="save-changes-btn"
+                        >
+                            Save Changes
+                        </button>
+
+                    </form>
+
+                </section>
+
+            </div>
+
+
+
+            <!-- =================================
+                 RIGHT COLUMN
+            ================================== -->
+
+            <div class="profile-right">
+
+
+                <!-- NOTIFICATIONS -->
+
+                <section class="profile-card notification-card">
+
+                    <h2>
+                        Notification Preferences
+                    </h2>
+
+
+                    <!-- EMAIL UPDATES -->
+
+                    <div class="notification-setting">
+
+                        <div>
+
+                            <strong>
+                                Email Updates
+                            </strong>
+
+                            <p>
+                                Get notifications about university admission deadlines
+                            </p>
+
+                        </div>
+
+
+                        <label class="toggle">
+
+                            <input
+                                type="checkbox"
+                                id="emailUpdates"
+                                checked
+                            >
+
+                            <span class="toggle-slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- CHECKLIST -->
+
+                    <div class="notification-setting">
+
+                        <div>
+
+                            <strong>
+                                Checklist Reminders
+                            </strong>
+
+                            <p>
+                                Weekly reminders about pending roadmap documents
+                            </p>
+
+                        </div>
+
+
+                        <label class="toggle">
+
+                            <input
+                                type="checkbox"
+                                id="checklistReminders"
+                                checked
+                            >
+
+                            <span class="toggle-slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- IELTS -->
+
+                    <div class="notification-setting">
+
+                        <div>
+
+                            <strong>
+                                IELTS Prep Tips
+                            </strong>
+
+                            <p>
+                                Get targeted study tips and mock exam release news
+                            </p>
+
+                        </div>
+
+
+                        <label class="toggle">
+
+                            <input
+                                type="checkbox"
+                                id="ieltsTips"
+                                checked
+                            >
+
+                            <span class="toggle-slider"></span>
+
+                        </label>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- DANGER ZONE -->
+
+                <section class="profile-card danger-zone">
+
+                    <h2>
+                        Danger Zone
+                    </h2>
+
+                    <p>
+                        Deleting your account will wipe out all documents,
+                        application logs, and progress on your Japa checklist.
+                    </p>
+
+
+                    <button
+                        type="button"
+                        class="delete-account-btn"
+                        id="deleteAccountBtn"
+                    >
+                        Delete Account Permanently
+                    </button>
+
+                </section>
+
+            </div>
+
+        </div>
+
+ <!-- DASHBOARD FOOTER -->
+<footer class="pages-footer">
+    <span>© 2026 Àjò</span>
+    <span>Plan. Prepare. Japa.</span>
+</footer>
+    </main>
+
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

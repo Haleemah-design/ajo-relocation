@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Àjò — Dashboard</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+    
+    <aside class="dashboard-sidebar">
+
+        <!-- LOGO -->
+       <a href="index.html" class="logo">
+               <img src="../images/logo2.png" alt="" srcset="">
+            </a>
+
+            
+        <!-- NAVIGATION -->
+        <nav class="dashboard-nav">
+
+            <a href="dashboard.html" class="dashboard-nav-link active">
+                <span class="nav-icon"> <i class="fa-solid fa-table-cells-large"></i>
+</i></span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="roadmap.html" class="dashboard-nav-link">
+                <span class="nav-icon"> <i class="fa-solid fa-signs-post"></i>
+                </span>
+                <span>My Roadmap</span>
+            </a>
+
+            <a href="documents.html" class="dashboard-nav-link">
+                <span class="nav-icon"><i class="fa-regular fa-folder-open"></i></span>
+                <span>Documents</span>
+            </a>
+
+            <a href="budget.html" class="dashboard-nav-link">
+                <span class="nav-icon"><i class="fa-solid fa-wallet"></i></span>
+                <span>Budget Planner</span>
+            </a>
+
+            <a href="ielts.html" class="dashboard-nav-link">
+                <span class="nav-icon"> <i class="fa-solid fa-graduation-cap"></i></span>
+                <span>IELTS / TOEFL</span>
+            </a>
+
+            <a href="accommodation.html" class="dashboard-nav-link">
+                <span class="nav-icon"> <i class="fa-solid fa-house"></i></span>
+                <span>Accommodation</span>
+            </a>
+
+            <a href="#" class="dashboard-nav-link">
+                <span class="nav-icon"><i class="fa-solid fa-book-open"></i></span>
+                <span>Resources</span>
+            </a>
+
+            <a href="#" class="dashboard-nav-link">
+                <span class="nav-icon"><i class="fa-regular fa-message"></i></span>
+                <span>Messages</span>
+            </a>
+
+            <a href="profile.html" class="dashboard-nav-link">
+                <span class="nav-icon"><i class="fa-regular fa-user"></i></span>
+                <span>Profile</span>
+            </a>
+
+            <a href="#" class="dashboard-nav-link">
+                <span class="nav-icon"> <i class="fa-solid fa-gear"></i></span>
+                <span>Settings</span>
+            </a>
+
+
+        </nav>
+
+
+        <!-- HELP -->
+        <div class="dashboard-help">
+
+            <div class="help-title">
+                <span>?</span>
+                Need help?
+            </div>
+
+            <p>
+                    Chat with our relocation assistants instantly.
+            </p>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================
+         MAIN CONTENT
+    ====================================== -->
+
+    <main class="dashboard-main">
+
+        <!-- TOP BAR -->
+        <header class="dashboard-topbar">
+
+            <div>
+                <h1>
+                    Good morning, Tunde 👋
+                </h1>
+
+                <p>
+                    Here is your relocation progress. You are doing great!
+                </p>
+            </div>
+
+
+            <div class="dashboard-user-area">
+
+                <button class="notification-button">
+    <i class="fa-regular fa-bell"></i>
+
+                </button>
+
+                <div class="user-avatar">
+    <img src="../images/profile.png" alt="Profile">
+</div>
+            </div>
+
+        </header>
+
+
+
+        <!-- =====================================
+             TOP CARDS
+        ====================================== -->
+
+        <section class="dashboard-top-cards">
+
+            <!-- PROGRESS CARD -->
+            <div class="progress-card">
+
+                <div class="progress-circle">
+
+                    <svg viewBox="0 0 120 120">
+
+                        <circle
+                            class="progress-background"
+                            cx="60"
+                            cy="60"
+                            r="52">
+                        </circle>
+
+                        <circle
+                            class="progress-value"
+                            cx="60"
+                            cy="60"
+                            r="52">
+                        </circle>
+
+                    </svg>
+
+                    <span>12%</span>
+
+                </div>
+
+
+                <div class="progress-content">
+
+                    <h2>
+                        You're just getting started!
+                    </h2>
+
+                    <p>
+                        Keep going, your new life abroad is closer than you think.
+                    </p>
+
+                    <p>
+                        Secure your document checklist to hit 20% next.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- JAPA PLAN -->
+            <div class="japa-plan-card">
+
+                <h2>
+                    Your Japa Plan
+                </h2>
+
+                <div class="plan-item">
+
+                    <span ><i class="fa-regular fa-flag"></i></span>
+
+                    <strong>Destination:</strong>
+
+                    <span id="dashboardDestination">
+                        United Kingdom
+                    </span>
+
+                </div>
+
+
+                <div class="plan-item">
+
+                    <span class="plan-icon">▱</span>
+
+                    <strong>Goal:</strong>
+
+                    <span id="dashboardGoal">
+                        Study (Postgraduate)
+                    </span>
+
+                </div>
+
+
+                <div class="plan-item">
+
+                    <span class="plan-icon">▣</span>
+
+                    <strong>Departure:</strong>
+
+                    <span>
+                        March 2027
+                        <small>(6–12 mos)</small>
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             ROADMAP
+        ====================================== -->
+
+        <section class="roadmap-card">
+
+            <h2>
+                Relocation Roadmap
+            </h2>
+
+
+            <div class="roadmap">
+
+                <!-- STEP 1 -->
+                <div class="roadmap-step completed">
+
+                    <div class="roadmap-number">
+                        ✓
+                    </div>
+
+                    <span>
+                        Destination
+                    </span>
+
+                </div>
+
+
+                <div class="roadmap-line completed-line"></div>
+
+
+                <!-- STEP 2 -->
+                <div class="roadmap-step current">
+
+                    <div class="roadmap-number">
+                        <span></span>
+                    </div>
+
+                    <span>
+                        Documents
+                    </span>
+
+                </div>
+
+
+                <div class="roadmap-line"></div>
+
+
+                <!-- STEP 3 -->
+                <div class="roadmap-step">
+
+                    <div class="roadmap-number">
+                        3
+                    </div>
+
+                    <span>
+                        Exams
+                    </span>
+
+                </div>
+
+
+                <div class="roadmap-line"></div>
+
+
+                <!-- STEP 4 -->
+                <div class="roadmap-step">
+
+                    <div class="roadmap-number">
+                        4
+                    </div>
+
+                    <span>
+                        Application
+                    </span>
+
+                </div>
+
+
+                <div class="roadmap-line"></div>
+
+
+                <!-- STEP 5 -->
+                <div class="roadmap-step">
+
+                    <div class="roadmap-number">
+                        5
+                    </div>
+
+                    <span>
+                        Visa Tracker
+                    </span>
+
+                </div>
+
+
+                <div class="roadmap-line"></div>
+
+
+                <!-- STEP 6 -->
+                <div class="roadmap-step">
+
+                    <div class="roadmap-number">
+                        6
+                    </div>
+
+                    <span>
+                        Housing
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             BOTTOM GRID
+        ====================================== -->
+
+        <section class="dashboard-bottom-grid">
+
+
+            <!-- BUDGET -->
+            <div class="dashboard-small-card">
+
+                <h3>
+                    Budget Goal Tracker
+                </h3>
+
+                <div class="money-value">
+                    ₦2,350,000
+                </div>
+
+                <p>
+                    of ₦6,050,000
+                    <br>
+                    estimated goal
+                </p>
+
+                <div class="budget-progress">
+                    <span></span>
+                </div>
+
+            </div>
+
+
+
+            <!-- DOCUMENTS -->
+            <div class="dashboard-small-card">
+
+                <h3>
+                    Uploaded Documents
+                </h3>
+
+                <div class="document-value">
+                    2 / 12 Files
+                </div>
+
+                <p>
+                    Checked and verified
+                </p>
+
+                <div class="document-progress">
+                    <span></span>
+                </div>
+
+            </div>
+
+
+
+            <!-- DAYS -->
+            <div class="dashboard-small-card days-card">
+
+                <h3>
+                    Days to Departure
+                </h3>
+
+                <div class="days-value">
+                    208 Days
+                </div>
+
+                <p>
+                    Target: March 15, 2027
+                </p>
+
+                <span class="encouragement">
+                    You've got this!
+                </span>
+
+            </div>
+
+
+
+            <!-- QUICK ACTIONS -->
+            <div class="quick-actions-card">
+
+                <h2>
+                    Quick Actions
+                </h2>
+
+
+                <a href="documents.html" class="quick-action">
+
+                    <span>
+                        ⇧
+                    </span>
+
+                    <strong>
+                        Upload transcript
+                    </strong>
+
+                    <b>
+                        ›
+                    </b>
+
+                </a>
+
+
+                <a href="budget.html" class="quick-action">
+
+                    <span>
+                        ♢
+                    </span>
+
+                    <strong>
+                        Update budget goals
+                    </strong>
+
+                    <b>
+                        ›
+                    </b>
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- DASHBOARD FOOTER -->
+<footer class="pages-footer">
+    <span>© 2026 Àjò</span>
+    <span>Plan. Prepare. Japa.</span>
+</footer>
+
+    </main>
+
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

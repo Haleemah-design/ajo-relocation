@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Àjò — Accommodation</title>
+
+    <link rel="stylesheet"
+        href="../css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body class="dashboard-page accommodation-page">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="dashboard-sidebar">
+
+        <a href="dashboard.html" class="logo">
+            <img src="../images/logo2.png" alt="Àjò">
+        </a>
+
+
+        <nav class="dashboard-nav">
+
+            <a href="dashboard.html"
+                class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-solid fa-table-cells-large"></i>
+                </span>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="roadmap.html"
+                class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-solid fa-signs-post"></i>
+                </span>
+
+                <span>My Roadmap</span>
+
+            </a>
+
+
+            <a href="documents.html"
+                class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-regular fa-folder-open"></i>
+                </span>
+
+                <span>Documents</span>
+
+            </a>
+
+
+            <a href="budget.html"
+                class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-solid fa-wallet"></i>
+                </span>
+
+                <span>Budget Planner</span>
+
+            </a>
+
+
+            <a href="ielts.html"
+                class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+
+                <span>IELTS / TOEFL</span>
+
+            </a>
+
+
+            <a href="accommodation.html"
+                class="dashboard-nav-link active">
+
+                <span class="nav-icon">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+
+                <span>Accommodation</span>
+
+            </a>
+
+
+            <a href="#" class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </span>
+
+                <span>Resources</span>
+
+            </a>
+
+
+            <a href="#" class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-regular fa-message"></i>
+                </span>
+
+                <span>Messages</span>
+
+            </a>
+
+
+            <a href="profile.html"
+                class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-regular fa-user"></i>
+                </span>
+
+                <span>Profile</span>
+
+            </a>
+
+
+            <a href="#" class="dashboard-nav-link">
+
+                <span class="nav-icon">
+                    <i class="fa-solid fa-gear"></i>
+                </span>
+
+                <span>Settings</span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="dashboard-help">
+
+            <div class="help-title">
+
+                <span>?</span>
+
+                Need help?
+
+            </div>
+
+            <p>
+                Chat with our relocation assistants instantly.
+            </p>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- MAIN -->
+
+    <main class="dashboard-main accommodation-main">
+
+
+        <!-- HEADER -->
+
+        <header class="accommodation-header">
+
+            <div>
+
+                <h1>
+                    Accommodation
+                </h1>
+
+                <p>
+                    Find vetted student housing and private listings
+                    close to campuses.
+                </p>
+
+            </div>
+
+
+            <div class="destination-pill">
+
+                <span><i class="fa-regular fa-flag"></i></span>
+
+                <strong id="accommodationDestination">
+                    United Kingdom
+                </strong>
+
+                <span>· Study</span>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- SEARCH -->
+
+        <section class="accommodation-search">
+
+            <div class="search-input">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="accommodationSearch"
+                    placeholder="Search by university or city..."
+                >
+
+            </div>
+
+
+            <div class="room-filter">
+
+                <i class="fa-solid fa-filter"></i>
+
+                <select id="roomType">
+
+                    <option value="all">
+                        Room Type: All
+                    </option>
+
+                    <option value="bed">
+                        1 Bed
+                    </option>
+
+                    <option value="studio">
+                        Studio
+                    </option>
+
+                    <option value="ensuite">
+                        En-suite
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button id="accommodationSearchButton">
+                Search
+            </button>
+
+        </section>
+
+
+
+        <!-- CITIES -->
+
+        <section class="trending-section">
+
+            <h2>
+                Trending Japa Cities
+            </h2>
+
+
+            <div class="city-tabs">
+
+                <button class="city-tab active"
+                    data-city="London">
+                    London
+                </button>
+
+                <button class="city-tab"
+                    data-city="Manchester">
+                    Manchester
+                </button>
+
+                <button class="city-tab"
+                    data-city="Birmingham">
+                    Birmingham
+                </button>
+
+                <button class="city-tab"
+                    data-city="Leeds">
+                    Leeds
+                </button>
+
+                <button class="city-tab"
+                    data-city="Glasgow">
+                    Glasgow
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- LISTINGS -->
+
+        <section class="accommodation-grid">
+
+
+            <!-- LONDON -->
+
+            <article class="accommodation-card"
+                data-city="London">
+
+                <div class="accommodation-image london-image">
+
+                    <span class="listing-location">
+                        LONDON
+                    </span>
+
+                </div>
+
+
+                <div class="accommodation-card-body">
+
+                    <div class="listing-title-row">
+
+                        <h3>
+                            Crown Plaza Premium Student Living
+                        </h3>
+
+                        <span class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            4.8
+                        </span>
+
+                    </div>
+
+
+                    <p class="listing-details">
+                        1 Bed · Shared kitchen · All bills included
+                    </p>
+
+
+                    <div class="listing-divider"></div>
+
+
+                    <div class="listing-bottom">
+
+                        <div>
+
+                            <strong>
+                                £185/wk
+                            </strong>
+
+                            <small>
+                                ₦370,000/mo equivalent
+                            </small>
+
+                        </div>
+
+
+                        <button class="inquire-button">
+                            Inquire
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- MANCHESTER -->
+
+            <article class="accommodation-card"
+                data-city="Manchester">
+
+                <div class="accommodation-image manchester-image">
+
+                    <span class="listing-location">
+                        MANCHESTER
+                    </span>
+
+                </div>
+
+
+                <div class="accommodation-card-body">
+
+                    <div class="listing-title-row">
+
+                        <h3>
+                            Blue Ridge Heights Student Hall
+                        </h3>
+
+                        <span class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            4.7
+                        </span>
+
+                    </div>
+
+
+                    <p class="listing-details">
+                        Studio · Private kitchen · Gym access
+                    </p>
+
+
+                    <div class="listing-divider"></div>
+
+
+                    <div class="listing-bottom">
+
+                        <div>
+
+                            <strong>
+                                £145/wk
+                            </strong>
+
+                            <small>
+                                ₦290,000/mo equivalent
+                            </small>
+
+                        </div>
+
+
+                        <button class="inquire-button">
+                            Inquire
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- BIRMINGHAM -->
+
+            <article class="accommodation-card"
+                data-city="Birmingham">
+
+                <div class="accommodation-image birmingham-image">
+
+                    <span class="listing-location">
+                        BIRMINGHAM
+                    </span>
+
+                </div>
+
+
+                <div class="accommodation-card-body">
+
+                    <div class="listing-title-row">
+
+                        <h3>
+                            Birmingham Central En-suite
+                        </h3>
+
+                        <span class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            4.5
+                        </span>
+
+                    </div>
+
+
+                    <p class="listing-details">
+                        En-suite Room · Shared kitchen · Bills included
+                    </p>
+
+
+                    <div class="listing-divider"></div>
+
+
+                    <div class="listing-bottom">
+
+                        <div>
+
+                            <strong>
+                                £125/wk
+                            </strong>
+
+                            <small>
+                                ₦250,000/mo equivalent
+                            </small>
+
+                        </div>
+
+
+                        <button class="inquire-button">
+                            Inquire
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+        
+ <!-- DASHBOARD FOOTER -->
+<footer class="pages-footer">
+    <span>© 2026 Àjò</span>
+    <span>Plan. Prepare. Japa.</span>
+</footer>
+    </main>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
